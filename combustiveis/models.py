@@ -6,22 +6,22 @@ from sqlmodel import Field, SQLModel
 
 
 class Estabelecimento(SQLModel, table=True):
-    cnpj_completo: int = Field(primary_key=True)
-    cnpj_basico: int
+    cnpj_completo: str = Field(primary_key=True)
+    cnpj_basico: str
     revenda: str
     regiao_sigla: str
     estado_sigla: str
     municipio: str
-    rua: str
-    numero: str
-    complemento: str
-    bairro: str
-    cep: str
+    rua: Optional[str] = None
+    numero: Optional[str] = None
+    complemento: Optional[str] = None
+    bairro: Optional[str] = None
+    cep: Optional[str] = None
 
 
 class Produto(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
-    name: str
+    nome_produto: str
 
 
 class Preco(SQLModel, table=True):
