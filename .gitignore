@@ -139,3 +139,4 @@ staticfiles/
 
 migrations/
 *.db
+*.db-journal

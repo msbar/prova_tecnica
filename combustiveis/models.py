@@ -26,7 +26,7 @@ class Produto(SQLModel, table=True):
 
 class Preco(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
-    cnpj_completo: int
+    cnpj_completo: str
     produto_id: int
     data_coleta: datetime.date
     valor_venda: condecimal(max_digits=18, decimal_places=3) = Field(default=None)
