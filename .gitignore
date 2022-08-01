@@ -135,7 +135,6 @@ staticfiles/
 .idea
 .ipynb_checkpoints/
 .vscode
-*.ipynb
 
 migrations/
 *.db
