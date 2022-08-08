@@ -35,3 +35,6 @@ source .venv/bin/activate
 .venv\Scripts\activate
 
 pip install -r requirements.txt
+
+# executar o script etl.py
+python etl.py
